@@ -557,7 +557,8 @@ IBM Challenge Componant
 }
 
 .ibm-main img {
-    border-radius: 1rem;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width:800px) {
@@ -566,7 +567,7 @@ IBM Challenge Componant
     }
 
     .ibm-main img {
-        margin: auto;
+        margin: 1rem auto;
         max-width: 1000px;
     }
 
