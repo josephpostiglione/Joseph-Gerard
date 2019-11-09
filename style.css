@@ -20,6 +20,9 @@ main {
     margin: 1rem 0;
 }
 
+h2 {
+    text-shadow: 4px 4px 4px rgba( 0, 0, 0, .1);
+}
 img {
     display: block;
     max-width: 100%;
@@ -34,7 +37,7 @@ nav li {
 }
 
 nav a {
-    color: #b3b3b3;
+    color: #383838;
     font-size: .8rem;
     padding: .5rem 1rem;
     text-decoration: none;
@@ -54,7 +57,7 @@ nav a:hover {
     padding-left: .5rem;
 }
 
-svg {
+nav svg {
     height: 3rem;
     width: 3rem;
 }
@@ -160,7 +163,10 @@ footer a:hover {
 /*----------------------------
 Portfolio Componant
 ----------------------------*/
-
+.portfolio {
+    margin: auto;
+    max-width: 1000px;
+}
 .portfolio h2 {
     color: #383838;    
 }
@@ -183,7 +189,7 @@ Portfolio Componant
 }
 
 .eye-overlay {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .2);
     border-radius: .4rem;
     bottom: 0;
     height: 100%;
@@ -220,6 +226,7 @@ Portfolio Componant
 
 @media (min-width: 660px) {
     .portfolio-list {
+        align-items: flex-end;
         display: grid;
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
@@ -240,12 +247,7 @@ Portfolio Componant
     .portfolio-list {
         grid-template-columns: repeat(3, 1fr)
     }
-}
 
-@media (min-width: 1450px) {
-    .portfolio-list {
-        grid-template-columns: repeat(4, 1fr)
-    }
 }
 
 
@@ -511,8 +513,6 @@ IBM Challenge Componant
     text-align: center;
 }
 
-
-
 .ibm-main h2 {
     font-size: 3.157rem;
     margin-bottom: 1rem;
@@ -565,5 +565,120 @@ IBM Challenge Componant
     .ibm-main p {
         font-size: 1.333rem;
         font-weight: 200;
+    }
+}
+
+.about-main {
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.about-main section {
+    align-items: start;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-main h2 {
+    border-bottom: 1px solid #000;
+    color: #000; 
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.paragraph-about-me {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.link-email {
+    border: 1px solid #000;
+    border-radius: .2rem;
+    color: #000;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+.link-email:hover {
+    background: linear-gradient(45deg, rgb(188, 162, 213) 0%, aquamarine 100%);
+    border: none;
+    border-radius: .2rem;
+    color: #fafafa;
+    transition: all .6s ease-in-out;
+}
+
+@media (max-width: 535px) {
+
+    .about-main section {
+        display: inline-block;
+    }
+
+    .about-main section div {
+        margin: 1rem auto;
+        max-width: 500px;
+    }
+
+}
+@media (min-width: 1030px) {
+
+    .about-main h2 {
+        font-size: 4.209rem;
+    }
+}
+
+.profile-image {
+    background-image: url(images/joey-marfa.jpg);
+    background-size: contain;
+    height: 40vh;
+    background-repeat: no-repeat;
+}
+
+.resume {
+    margin: auto;
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+.resume h2 {
+    border-bottom: 1px solid #000;
+    color: #000; 
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.resume-mobile {
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
+}
+
+.resume-desktop {
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .8);
+    display: none;
+}
+
+@media (min-width: 800px) {
+
+    .resume-desktop {
+        display: block;
+    }
+
+    .resume-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .resume {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1030px) {
+
+    .resume h2 {
+        font-size: 4.209rem;
     }
 }
