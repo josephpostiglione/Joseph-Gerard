@@ -582,18 +582,6 @@ IBM Challenge Componant
     }
 }
 
-.about-main {
-    align-items: center;
-    margin: auto;
-    max-width: 1000px;
-}
-
-.about-main section {
-    align-items: start;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-}
 
 .about-main h2 {
     border-bottom: 1px solid #000;
@@ -602,9 +590,22 @@ IBM Challenge Componant
     padding: .5rem;
 }
 
-.paragraph-about-me {
-    font-size: 1.5rem;
-    margin: 0;
+.about-main {
+    margin: auto;
+    max-width: 488px;
+}
+
+.about-main section {
+    display: inline-block;
+}
+
+.about-main section div {
+    margin: 0 auto;
+    max-width: 488px;
+}
+
+.about-main img {
+    border-radius: .4rem;
 }
 
 .link-email {
@@ -624,16 +625,34 @@ IBM Challenge Componant
     transition: all .6s ease-in-out;
 }
 
-@media (max-width: 535px) {
+@media (min-width: 1030px) {
+
+
+    .about-main {
+        align-items: center;
+        margin: auto;
+        max-width: 1000px;
+    }
 
     .about-main section {
-        display: inline-block;
+        align-items: start;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
     }
 
     .about-main section div {
-        margin: 1rem auto;
-        max-width: 500px;
+
     }
+
+
+    .paragraph-about-me {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+
 
 }
 @media (min-width: 1030px) {
@@ -706,5 +725,11 @@ IBM Challenge Componant
         margin-left: auto;
     }
     
+}
+
+.icon-instagram {
+    display: inline-block;
+    padding: 1rem 1rem 1rem 0;
+    width: 3rem;
 }
 
