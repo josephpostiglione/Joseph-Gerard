@@ -728,8 +728,26 @@ IBM Challenge Componant
 }
 
 .icon-instagram {
-    display: inline-block;
-    padding: 1rem 1rem 1rem 0;
+    padding-right: .5rem;
     width: 3rem;
 }
 
+.link-instagram {
+    color: #383838;
+    align-items: center;
+    display: flex;
+    font-family: cursive;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.link-instagram:hover {
+    text-shadow: 1px 1px 4px rgb(188, 162, 213);
+    transition: all .3s ease-in-out;
+}
+
+.link-instagram p {
+    margin: 0;
+}
