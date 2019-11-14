@@ -937,6 +937,7 @@ IBM Challenge Componant
 .text-container h1 {
     font-size: 1.2rem;
     font-weight: 500;
+    margin-top: 0;
     text-align: center;
 }
 
