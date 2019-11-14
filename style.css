@@ -902,6 +902,7 @@ IBM Challenge Componant
 
 .bg-1 {
     background-image: url(images/florida-statue.jpg);
+    position: relative;
 }
 
 .bg-2 {
