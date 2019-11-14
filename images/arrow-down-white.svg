@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>arrow-down-white</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow-down-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="arrow-down-sand-dark" transform="translate(2.000000, 4.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="arrow-down-white" transform="translate(13.000000, 11.000000) rotate(90.000000) translate(-13.000000, -11.000000) translate(2.000000, -2.000000)">
+                <path d="M0,0 L20.5430474,12.1390735 C21.018524,12.4200369 21.1762081,13.0332527 20.8952446,13.5087293 C20.8094298,13.6539545 20.6882726,13.7751117 20.5430474,13.8609265 L0,26 L0,26" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,31 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 
 html {
+    color: rgb(99, 99, 99);
     font-family: 'Lato', arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #fafafa;
-    margin: 1rem;
+    background-color: #fff;
+    margin: 0;
 }
 
 nav {
-    align-items: flex-start;
+    align-items: baseline;
     display: flex;
     justify-content: space-between;
     margin: .5rem 1rem 0;
 }
 
 main {
-    margin: 1rem 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 2rem 0 1rem;
+    padding: 0 .5rem;
+    text-shadow: 4px 4px 4px rgba( 0, 0, 0, .1);
 }
 
 h2 {
     text-shadow: 4px 4px 4px rgba( 0, 0, 0, .1);
 }
+
 img {
     display: block;
     max-width: 100%;
+}
+
+.icon-down-arrow {
+    animation: pulse 2s infinite;
+    background-color: rgba( 0, 0, 0, .2);
+    border-radius: 50%;
+    right: 1rem;
+    max-width: 1.2rem;
+    padding: 1rem;
+    position: absolute;
+    top: 40rem;
+}
+
+header {
+    left: 0;
+    opacity: .9;
+    position: fixed;
+    right: 0;
+    z-index: 1;
 }
 
 nav ul {
@@ -34,11 +63,15 @@ nav ul {
 
 nav li {
     display: inline-block;
+    padding-top: 2rem;
 }
 
 nav a {
-    color: #383838;
-    font-size: .8rem;
+    background-color: rgba( 0, 0, 0, .5);
+    border-radius: .2rem;
+    color: #fafafa;
+    font-size: 1rem;
+    font-weight: 500;
     padding: .5rem 1rem;
     text-decoration: none;
     transition: all .3s ease-in-out;
@@ -46,7 +79,6 @@ nav a {
 
 nav a:hover {
     background: linear-gradient(45deg, rgb(188, 162, 213) 0%, aquamarine 100%);
-    border-radius: .2rem;
     color: #fafafa;
     transition: all .3s ease-in-out;
 }
@@ -63,11 +95,11 @@ nav svg {
 }
 
 .paragraph-featured {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 300;
     line-height: 1.6;
-    margin: 8rem auto 1rem;
-    max-width: 35rem;
+    margin: 1rem auto 1rem;
+    max-width: 40rem;
     text-align: center;
     transition: all .3s ease-in-out;
 }
@@ -77,7 +109,8 @@ nav svg {
 }
 
 footer {
-    margin-top: 10rem;
+    margin-top: 4rem;
+    padding: 1rem;
 }
 
 footer small {
@@ -118,6 +151,50 @@ footer a:hover {
         box-shadow: -1px -1px #383838, -2px -2px #383838, -3px -3px #383838, -4px -4px #383838, -5px -5px #383838, -6px -6px #383838, -7px -7px #383838, -8px -8px #383838;
         transform: translateX(8px) translateY(8px);
     }
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    55% {
+        transform: translateY(-30px);
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        transform: translateY(-20px);
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+
 }
 
 @media ( max-width: 367px ) {
@@ -166,61 +243,25 @@ Portfolio Componant
 
 .portfolio {
     margin: auto;
-    max-width: 1000px;
-}
-.portfolio h2 {
-    color: #383838;    
 }
 
-.portfolio-list {
-    border-top: 1px solid rgba(0, 0, 0, .8);
+.portfolio h2 {
+    color: rgb(99, 99, 99); 
+    margin: 0;   
+    padding: .5rem;
 }
 
 .portfolio-card {
     background-color: white;
-    border-radius: .4rem;
-    box-shadow: 0 0 2px rgba( 0, 0, 0, .3), 0 15px 20px -10px rgba( 0, 0, 0, .3);
+    border: 1px solid #f4f4f4;
     margin: 1rem auto 2rem;
+    max-width: 400px;
     position: relative;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
-.portfolio-card:first-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    max-width: 660px
-}
-
-.portfolio-card img {
-    border-radius: .4rem .4rem 0 0;
-}
-
-.eye-overlay {
-    background-color: rgba(255, 255, 255, .2);
-    border-radius: .4rem;
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .3s ease;
-    width: 100%;
-}
-
-.portfolio-card:hover .eye-overlay {
-    opacity: .8;
-}
-
-.eye-icon {
-    -ms-transform: translate(-50%, -50%);
-    left: 50%;
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
+.portfolio-card:hover {
+    box-shadow: 0 0 2px rgba(109, 79, 79, .2), 0 15px 20px -10px rgba( 0, 0, 0, .2);
 }
 
 .portfolio-card h5 {
@@ -235,7 +276,7 @@ Portfolio Componant
 
 @media (min-width: 660px) {
     .portfolio-list {
-        align-items: flex-start;
+        align-items: start;
         display: grid;
         grid-column-gap: 1rem;
         grid-template-columns: repeat(2,1fr);
@@ -250,7 +291,7 @@ Portfolio Componant
 @media (min-width: 1030px) {
 
     .portfolio-list {
-        grid-column-gap: 6rem;
+        grid-column-gap: 2rem;
     }
 
     .portfolio h2 {
@@ -264,30 +305,49 @@ Portfolio Componant
 }
 
 
-.modes-mobile {
+.main-portfolio-piece {
     background-color: none;
 }
 
-.modes-mobile article {
-    margin: 1rem 2rem;
+.main-portfolio-piece article {
+    margin: 1rem 1rem;
 }
 
-.modes-mobile h2 {
+.main-portfolio-piece h1 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.main-portfolio-piece h2 {
     font-size: 2.369rem;
+    margin-top: 2rem;
     padding: 0 1rem;
 }
 
-.modes-mobile h4 {
-    margin: 1rem;
+.main-portfolio-piece h3 {
+    font-size: 2rem;
+    text-align: center;
 }
 
-.modes-mobile p {
+.main-portfolio-piece h4 {
+    font-size: 1.666rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.main-portfolio-piece p {
     color: #000;
-    font-weight: 200;
+    font-size: 1.333rem;
+    line-height: 1.4;
     margin: 0 auto;
     max-width: 760px;
     padding: .5rem .5rem 1rem;
     text-align: center;
+}
+
+.main-portfolio-piece ul {
+    grid-column-end: 13;
+    grid-column-start: 1;
 }
 
 .dd-info {
@@ -314,7 +374,7 @@ Portfolio Componant
     font-weight: 500;
 }
 
-.modes-mobile ul {
+.main-portfolio-piece ul {
     column-width: 220px;
     margin: 1rem 2rem;
     max-width: 760px;
@@ -322,23 +382,24 @@ Portfolio Componant
     text-align: left;
 }
 
-.modes-mobile li {
+.main-portfolio-piece li {
     color: #000;
     font-size: 1.333rem;
-    font-weight: 200;
+    padding: .5rem 0;
 }
 
-.modes-mobile img {
+.main-portfolio-piece img {
     border-radius: .4rem;
     margin: .5rem auto 2rem;
 }
 
-.modes-mobile-hero {
+.main-portfolio-hero {
+    background-attachment: fixed;
     background-image: url(images/content-isometric.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 40vh;
+    min-height: 60vh;
 }
 
 .user-feedback-2 {
@@ -346,13 +407,18 @@ Portfolio Componant
     border: 2px solid #fff;
     box-shadow: -6px -6px #383838;
     border-radius: .4rem;
-    margin: .5rem .5rem 2rem;
+    margin: .5rem auto 2rem;
     max-width: 400px;
     padding: 1rem 2rem;
 }
 
 .user-feedback-2 h2 {
     padding-top: 0;
+}
+
+.user-feedback-2 h4 {
+    font-size: 1.666rem;
+    text-align: center;
 }
 
 .insight {
@@ -393,17 +459,17 @@ Portfolio Componant
 }
 
 @media (min-width: 568px) {
-    .modes-mobile ul {
+    .main-portfolio-piece ul {
         list-style: none;
     }
 }
 
 @media (min-width: 760px) {
-    .modes-mobile h2 {
+    .main-portfolio-piece h2 {
         font-size: 3.157rem;
     }
 
-    .modes-mobile ul {
+    .main-portfolio-piece ul {
         column-width: 220px;
         margin: auto;
         max-width: 760px;
@@ -425,7 +491,7 @@ Portfolio Componant
 
 
     .user-feedback-2 {
-        margin: .5rem auto 2rem;
+        margin: 2rem auto 2rem;
     }
 
     .insight {
@@ -434,42 +500,51 @@ Portfolio Componant
 }
 
 @media (min-width: 1020px) {
-    .modes-mobile article {
+    .main-portfolio-piece article {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(12,1fr);
         justify-items: center;
+        margin: 0 6rem;
     }
 
-    .modes-mobile h2 {
+ 
+    .main-portfolio-piece h2 {
         grid-column-start: 1;
         grid-column-end: 13;
     }
 
-    .modes-mobile h4 {
+    .main-portfolio-piece h3 {
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
+    .main-portfolio-piece h4 {
         font-size: 3.157rem;
         grid-column-start: 1;
         grid-column-end: 13;
     }
 
-    .modes-mobile p {
+    .main-portfolio-piece p {
         align-self: center;
         font-size: 1.333rem;
-        grid-column: span 6;
+        grid-column-start: 1;
+        grid-column-end: 13;
     }
 
-    .modes-mobile .proto-gif {
+    .main-portfolio-piece .proto-gif {
         grid-column-start: 1;
         grid-column-end: 5;
     }
 
-    .modes-mobile .proto-text {
-        grid-column-start: 5;
+    .main-portfolio-piece .proto-text {
+        grid-column-start: 6;
         grid-column-end: 13;
     }
 
-    .modes-mobile img {
-        grid-column: span 6;
+    .main-portfolio-piece img {
+        grid-column-start: 2;
+        grid-column-end: 12;
     }
 
     .pull-quote {
@@ -479,8 +554,8 @@ Portfolio Componant
 
     .case-study-list {
         align-self: center;
-        grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
     .case-study-list ul {
         font-size: 1.333rem;
@@ -491,8 +566,9 @@ Portfolio Componant
         margin-bottom: 0;
     }
 
-    .modes-mobile .important-paragraph-text {
-        grid-column: span 12;
+    .main-portfolio-piece .important-paragraph-text {
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
 
     .user-feedback-2 {
@@ -501,7 +577,8 @@ Portfolio Componant
 
     .insight {
         align-self: center;
-        grid-column: span 6;
+        grid-column-start: 1;
+        grid-column-end: 13;
     }
 }
 
@@ -515,7 +592,7 @@ IBM Challenge Componant
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 40vh;
+    min-height: 60vh;
 }
 
 .ibm-main {
@@ -524,6 +601,10 @@ IBM Challenge Componant
 
 .ibm-main article {
     text-align: center;
+}
+
+.ibm-main h1 {
+    margin-top: 2rem;
 }
 
 .ibm-main h2 {
@@ -585,7 +666,7 @@ IBM Challenge Componant
 
 .about-main h2 {
     border-bottom: 1px solid #000;
-    color: #000; 
+    color: rgb(99, 99, 99); 
     margin-bottom: 1rem;
     padding: .5rem;
 }
@@ -609,20 +690,18 @@ IBM Challenge Componant
 }
 
 .link-email {
-    border: 1px solid #000;
+    background: linear-gradient(45deg, rgb(188, 162, 213) 0%, aquamarine 100%);
     border-radius: .2rem;
-    color: #000;
-    font-size: 1.5rem;
-    padding: .5rem 1rem;
+    color: #fafafa;
+    font-size: 1.2rem;
+    max-width: 8rem;
+    padding: .75rem 1.5rem;
     text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 
 .link-email:hover {
-    background: linear-gradient(45deg, rgb(188, 162, 213) 0%, aquamarine 100%);
-    border: none;
-    border-radius: .2rem;
-    color: #fafafa;
-    transition: all .6s ease-in-out;
+    box-shadow: 2px 2px 4px rgba( 0, 0, 0, .2);
 }
 
 @media (min-width: 1030px) {
@@ -641,19 +720,11 @@ IBM Challenge Componant
         grid-template-columns: 1fr 1fr;
     }
 
-    .about-main section div {
-
-    }
-
-
     .paragraph-about-me {
         font-size: 1.5rem;
         line-height: 1.4;
         margin: 0;
     }
-
-
-
 }
 @media (min-width: 1030px) {
 
@@ -675,10 +746,16 @@ IBM Challenge Componant
     padding-bottom: 1rem;
 }
 
-.resume h2 {
-    border-bottom: 1px solid #000;
-    color: #000; 
+.resume h1 {
     margin-bottom: 1rem;
+}
+
+.resume h2 {
+
+    color: rgb(99, 99, 99); 
+    font-size: 4.209rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
     padding: .5rem;
 }
 
@@ -695,6 +772,8 @@ IBM Challenge Componant
 
     .resume-desktop {
         display: block;
+        margin: auto;
+        max-width: 1000px;
     }
 
     .resume-mobile {
@@ -702,30 +781,6 @@ IBM Challenge Componant
     }
 }
 
-@media (min-width: 800px) {
-
-    .resume {
-        max-width: 1000px;
-    }
-}
-
-@media (min-width: 1030px) {
-
-    .resume h2 {
-        font-size: 4.209rem;
-    }
-}
-
-@media (min-width: 1240px) {
-    .escape-hatch {
-        position: fixed;
-    }
-
-    header nav ul {
-        margin-left: auto;
-    }
-    
-}
 
 .icon-instagram {
     padding-right: .5rem;
@@ -738,7 +793,7 @@ IBM Challenge Componant
     display: flex;
     font-family: cursive;
     justify-content: flex-start;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
     text-decoration: none;
     transition: all .3s ease-in-out;
 }
@@ -750,4 +805,255 @@ IBM Challenge Componant
 
 .link-instagram p {
     margin: 0;
+}
+
+.hero-datatune {
+    background-image: url(images/datatune/datatune-hero-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 60vh;
+}
+
+@media ( min-width: 700px ) {
+
+    .hero-datatune {
+        background-image: url(images/datatune/datatune-hero.png);
+    }
+}
+
+.main-portfolio-piece a {
+    border-radius: .4rem;
+    box-shadow: 0 0 2px rgba( 0, 0, 0, .3), 0 15px 20px -10px rgba( 0, 0, 0, .3);
+    grid-column-start: 3;
+    grid-column-end: 11;
+    transition: all .3s ease-in-out;
+}
+
+
+.main-portfolio-piece a:hover {
+    box-shadow: 0 0 2px rgba( 0, 0, 0, .6), 0 15px 20px -10px rgba( 0, 0, 0, .6);
+    transition: all .3s ease-in-out;
+}
+
+.main-portfolio-piece a img {
+    border-radius: .4rem;
+    margin: 0;
+}
+
+.main-portfolio-piece h2, .main-portfolio-piece h3 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.main-portfolio-piece h3 {
+    font-size: 2rem;
+}
+
+.article-datatune h1 {
+    grid-column-end: 13;
+    grid-column-start: 1;
+    margin-top: 2rem;
+}
+
+.article-datatune h2 {
+    color: #E91C8E;
+    font-size: 3rem;
+}
+.article-datatune h3 {
+    font-size: 2.5rem;
+}
+
+.main-resume, .main-portfolio {
+    margin: 0 1rem;
+    padding-top: 6rem;
+}
+
+.project-themes {
+    margin-bottom: 2rem;
+}
+
+@media ( min-width: 1020px ) {
+
+    .project-themes {
+        grid-column-start: 3;
+        grid-column-end: 11;
+    }
+
+    .project-themes h4 {
+        font-size: 2rem;
+    }
+
+    ul li {
+        font-weight: 200;
+    }
+}
+
+.hero {
+    background-attachment: fixed;
+    background-color: var(--color-sand);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 80vh;
+    opacity: .7;
+    padding: 2rem;
+
+}
+
+.bg-1 {
+    background-image: url(images/florida-statue.jpg);
+}
+
+.bg-2 {
+    background-image: url(images/nyc-train.jpg);
+    min-height: 400px;
+}
+
+.bg-3 {
+    background-image: url(images/florida-ceiling.jpg);
+    min-height: 720px;
+}
+
+.bg-4 {
+    background-image: url(images/joey-marfa.jpg);
+    min-height: 240px;
+}
+
+.bg-5 {
+    background-image: url(images/willie-and-littlefoot.JPG);
+    min-height: 500px;
+}
+
+.text-container {
+    align-items: center;
+    color: rgb(99, 99, 99);
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    text-align: center;
+}
+
+.text-container h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 1rem;
+    max-width: 35rem;
+    text-align: justify;
+}
+
+.convo {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    margin: 0 auto 2rem;
+    max-width: 40rem;
+}
+
+.convo p {
+    background-color: rgba( 0, 0, 0, .1);
+    border-radius: .4rem;
+    font-size: 1rem;
+    margin: .5rem;
+    max-width: 20rem;
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+.convo-user strong {
+    background-color: #E91C8E;
+    color: white;
+    padding: .5rem;
+}
+
+.convo-user p {
+    background-color: rgba(216, 77, 174, 0.1);
+}
+
+.convo-product p {
+    background-color: rgba( 0, 0, 0, .1);
+}
+
+.convo-product strong {
+    background-color: #383838;
+    color: white;
+    padding: .5rem;
+}
+
+.convo-user {
+    align-items: center;
+    display: flex;
+}
+
+.convo-product {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.strong-pink {
+    background-color: #E91C8E;
+    color: white;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.strong-grey {
+    background-color: #383838;
+    color: white;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.task-flow {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    justify-content: center;
+    margin: auto;
+    max-width: 40rem;
+}
+
+@media ( min-width: 1020px ) {
+
+    .convo-user {
+        margin-right: 20rem;
+    }
+}
+
+.design-retrospective {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.design-retrospective p:first-child {
+    color: #E91C8E;
+}
+
+video {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: auto;
+    margin: auto;
+    width: 100%;
+}
+
+p .link-text {
+    box-shadow: none;
+    color: #E91C8E;
+    text-decoration: none;
+}
+
+p .link-text:hover {
+    box-shadow: none;
+    color: #91d3ed;
+}
+
+.main-portfolio-piece .link-img:hover {    
+    box-shadow: 0 0 2px rgba( 0, 0, 0, .3), 0 15px 20px -10px rgba( 0, 0, 0, .3);
 }
