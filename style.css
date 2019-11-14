@@ -400,6 +400,7 @@ Portfolio Componant
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60vh;
+    opacity: .7;
 }
 
 .user-feedback-2 {
@@ -538,7 +539,7 @@ Portfolio Componant
     }
 
     .main-portfolio-piece .proto-text {
-        grid-column-start: 6;
+        grid-column-start: 7;
         grid-column-end: 13;
     }
 
@@ -593,6 +594,7 @@ IBM Challenge Componant
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60vh;
+    opacity: .7;
 }
 
 .ibm-main {
@@ -813,6 +815,7 @@ IBM Challenge Componant
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 60vh;
+    opacity: .7;
 }
 
 @media ( min-width: 700px ) {
@@ -1064,4 +1067,27 @@ p .link-text:hover {
 
 .main-portfolio-piece .link-img:hover {    
     box-shadow: 0 0 2px rgba( 0, 0, 0, .3), 0 15px 20px -10px rgba( 0, 0, 0, .3);
+}
+
+.hero-311 {
+    background-image: url(images/austin-311/joseph_postiglione_311_interactive_map_home_comp.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    opacity: .7;
+}
+
+.article-311 h2 {
+    color: #008B43;
+}
+
+.main-portfolio-piece .img-ideation {
+    grid-column: span 6;
+}
+
+.article-311 video {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    margin: .5rem auto 2rem;
 }
