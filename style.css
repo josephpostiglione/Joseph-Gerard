@@ -1019,6 +1019,13 @@ IBM Challenge Componant
     max-width: 40rem;
 }
 
+@media ( max-width: 499px) {
+
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
 @media ( min-width: 1020px ) {
 
     .convo-user {
