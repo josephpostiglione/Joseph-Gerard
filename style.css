@@ -394,7 +394,6 @@ Portfolio Componant
 }
 
 .main-portfolio-hero {
-    background-attachment: fixed;
     background-image: url(images/content-isometric.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -899,7 +898,6 @@ IBM Challenge Componant
     min-height: 80vh;
     opacity: .7;
     padding: 2rem;
-
 }
 
 .bg-1 {
