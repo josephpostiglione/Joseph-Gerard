@@ -228,6 +228,10 @@ nav a {
     transition: all 1s ease-in-out;
 }
 
+nav a:visited {
+    color: var(--color-off-white);
+}
+
 nav a:hover {
     background: var(--color-purple-green-gradient);
     background-color: var(--color-green);
@@ -297,6 +301,10 @@ Buttons & Forms
     transition: all 1s ease-in-out;
 }
 
+.link-contact:visited {
+    color: var(--color-off-white);
+}
+
 .link-contact:hover {
     background: var(--color-purple-green-gradient);
     background-color: var(--color-green);
@@ -321,7 +329,7 @@ Buttons & Forms
     text-align: right;
 }
 
-input, textarea, button {
+input[type="text"], input[type="email"], textarea, button {
     border: 2px solid var(--color-purple);
     border-radius: .2rem;
     color: var(--color-light-grey);
@@ -398,6 +406,10 @@ footer a {
     transition: all .3s ease-in-out;
 }
 
+footer a:visited {
+    color: var(--color-light-grey);
+}
+
 footer a:hover {
     color: var(--color-dark-grey);
     text-decoration: underline;
@@ -431,10 +443,12 @@ Home
 }
 .icon-down-arrow {
     animation: pulse 2s infinite;
-    background-color: var(--color-transparent-black);
+    background: var(--color-purple-green-gradient);
     border-radius: 50%;
+    box-shadow: 2px 2px 4px var(--color-transparent-black);
     right: 1rem;
     max-width: 1.2rem;
+    opacity: .9;
     padding: 1rem;
     position: absolute;
     top: 40rem;
@@ -456,8 +470,12 @@ Home
     transition: all .3s ease-in-out;
 }
 
+.link-instagram:visited {
+    color: var(--color-dark-grey);
+}
+
 .link-instagram:hover {
-    text-shadow: 1px 1px 4px var(--color-purple);
+    text-shadow: 2px 2px 8px var(--color-pink);
     transition: all .3s ease-in-out;
 }
 
@@ -574,7 +592,7 @@ Portfolio
     background-color: white;
     border: 1px solid #f4f4f4;
     margin: 1rem auto 2rem;
-    max-width: 400px;
+    max-width: 480px;
     position: relative;
     transition: all .5s ease;
 }
@@ -599,6 +617,7 @@ Portfolio
         align-items: start;
         display: grid;
         grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
@@ -616,10 +635,6 @@ Portfolio
 
     .portfolio h2 {
         font-size: 4.209rem;
-    }
-
-    .portfolio-list {
-        grid-template-columns: repeat(3, 1fr)
     }
 
 }
@@ -648,7 +663,7 @@ Resume
 }
 
 .resume-info-block {
-    background-color: var(--color-green);
+    background: var(--color-purple-green-gradient);
     box-sizing: border-box;
     color: var(--color-dark-grey);
     display: flex;
@@ -661,13 +676,13 @@ Resume
 }
 
 .resume-info-block a {
-    color: var(--color-dark-grey);
+    color: var(--color-off-white);
     padding: .25rem;
     text-decoration: none;
 }
 
 .resume-info-block h2, .skills-box h2 {
-    color: var(--color-dark-grey);
+    color: var(--color-off-white);
     font-size: var(--size-five-up);
     margin-bottom: 0;
     padding: 0;
@@ -676,7 +691,7 @@ Resume
 
 .resume-info-block h3 {
     margin-bottom: var(--size-four-up);
-    color: var(--color-light-grey);
+    color: var(--color-off-white);
 }
 
 .resume p {
@@ -954,7 +969,7 @@ Portfolio Piece Styles
 
 .ibm-main img {
     border-radius: .2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .main-portfolio-piece a {
@@ -1156,7 +1171,7 @@ video {
     }
 
     .ibm-main img {
-        margin: 1rem auto;
+        margin: 1rem auto 3rem;
         max-width: 1000px;
     }
 
