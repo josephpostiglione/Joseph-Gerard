@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1240px" height="1520px" viewBox="0 0 1240 1520" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>graphic box</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="272" height="272" rx="16"></rect>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#BBB5D9" offset="0%"></stop>
+            <stop stop-color="#B8F8EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Joseph-Postiglione---Product-Designer-Resume-Mobile" transform="translate(0.000000, -1462.000000)">
+            <g id="graphic-box" transform="translate(-124.000000, 1462.000000)">
+                <rect id="Rectangle-Copy" fill="#F1F0EF" x="124" y="0" width="1240" height="1462"></rect>
+                <g id="grid" transform="translate(0.000000, 32.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="304" y="304" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-22" fill="#FFFFFF" x="304" y="0" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-18" fill="#FFFFFF" x="0" y="304" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-23" fill="#FFFFFF" x="0" y="0" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-6" fill="#FFFFFF" x="304" y="608" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-19" fill="#FFFFFF" x="0" y="608" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#FFFFFF" x="608" y="304" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-26" fill="#FFFFFF" x="912" y="0" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-24" fill="#FFFFFF" x="608" y="0" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-12" fill="#FFFFFF" x="608" y="912" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-7" fill="#000000" x="608" y="608" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-13" fill="#FFFFFF" x="608" y="1216" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-4" fill="#FFFFFF" x="912" y="304" width="272" height="272" rx="136"></rect>
+                    <rect id="Rectangle-Copy-14" fill="#FFFFFF" x="912" y="912" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-8" fill="#FFFFFF" x="912" y="608" width="272" height="272" rx="16"></rect>
+                    <g id="Rectangle-Copy-15" transform="translate(308.000000, 912.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <rect fill="url(#linearGradient-3)" mask="url(#mask-2)" x="0" y="0" width="272" height="272" rx="16"></rect>
+                    </g>
+                    <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="1216" y="304" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-25" fill="#FFFFFF" x="1216" y="0" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-16" fill="#FFFFFF" x="1216" y="912" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-9" fill="#FFFFFF" x="1216" y="608" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-17" fill="#FFFFFF" x="1216" y="1216" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-27" fill="#FFFFFF" x="912" y="1216" width="272" height="272" rx="16"></rect>
+                    <rect id="Rectangle-Copy-20" fill="#FFFFFF" x="8" y="912" width="268" height="268" rx="16"></rect>
+                    <rect id="Rectangle-Copy-11" fill="#FFFFFF" x="308" y="1216" width="268" height="268" rx="16"></rect>
+                    <rect id="Rectangle-Copy-21" fill="#FFFFFF" x="8" y="1216" width="268" height="268" rx="16"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
