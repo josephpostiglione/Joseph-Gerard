@@ -7,11 +7,13 @@
     <title>Joseph Gerard Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/joey-logo.png">
+    
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="index.html" class="escape-hatch">
+            <a href="index.html" class="escape-hatch shadow-pop-tl">
 
                 <svg viewBox="0 0 150 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -21,19 +23,27 @@
                     </g>
                 </svg>
             </a>
-                
-            <ul>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+            <div class="menu-icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
         </nav>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
     </header>
 
     <main class="main-index">
         
         <div class="hero bg-1">
-            <a class="link-icon-arrow" href="#contact"><img src="images/arrow-down-white.svg" class="icon-down-arrow"></a>
+            <a href="#contact"><img src="images/arrow-down-white.svg" class="icon-down-arrow"></a>
         </div>
         
         <section class="text-container">
@@ -89,5 +99,24 @@
             <small class="footer-copywrite">&copy; Joseph Postiglione 2019</small>
 
     </footer>
+
+    <script>
+
+        function myFunction(x) {
+        
+            x.classList.toggle("change");
+    
+            var x = document.getElementById("nav-links");
+    
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } 
+    
+            else {
+                x.style.display = "block";
+            }
+        }
+    
+    </script>
 </body>
 </html>

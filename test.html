@@ -24,6 +24,12 @@
                 </svg>
             </a>
 
+            <nav class="nav-links" id="nav-links">
+                <a href="portfolio.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
             <div class="menu-icon" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -32,72 +38,28 @@
 
         </nav>
 
-        <nav class="nav-links" id="nav-links">
-            <a href="portfolio.html">Portfolio</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
     </header>
-
-    <main class="main-contact">
-
-        <h1>Contact</h1>
-
-        <form action="https://formspree.io/xgeedgje" method="POST">
-
-                <label for="name">Name</label>
-                
-                <input type="text" id="name" name="name" placeholder="Jane Appleseed">
-
-                <label for="email">Email</label>
-            
-                <input type="email" id="email" name="_replyto" placeholder="Jane@Appleseed.com">
-
-                <label for="message">Message</label>
-
-                <textarea id="message" name="message" placeholder="I want to pay you to play with all the dogs..."></textarea>
-
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-        </form>
-    </main>
-    <footer>
-
-            <div>
-
-                <small>Site Design by Joseph Postiglione</small>
-        
-                <ul>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="https://www.linkedin.com/in/joseph-postiglione/">Linkedin</a></li>
-                    <li><a href="https://liftedtraces.bandcamp.com/">Music</a></li>
-                </ul>
-        
-            </div>
-    
-            <small class="footer-copywrite">&copy; Joseph Postiglione 2019</small>
-
-    </footer>
 
     <script>
 
         function myFunction(x) {
         
             x.classList.toggle("change");
-    
+
             var x = document.getElementById("nav-links");
-    
+
             if (x.style.display === "block") {
                 x.style.display = "none";
             } 
-    
+
             else {
                 x.style.display = "block";
             }
-        }
-    
+
+    }
+
     </script>
+
+
 </body>
 </html>
