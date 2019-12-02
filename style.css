@@ -290,7 +290,7 @@ Menu Component
     border-radius: .2rem;
     height: 5px;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: .4s;
     width: 35px;
 }
 
@@ -388,7 +388,7 @@ button {
 
 button:hover {
     border-color: transparent;
-    box-shadow: 3px 3px 0 rgba(56, 56, 56, 0.6);
+    box-shadow: 3px 3px 0 rgba(56, 56, 56, .6);
     background-color: aquamarine;
     color: var(--color-purple-dark);
     cursor: pointer;
@@ -612,6 +612,35 @@ Portfolio
     padding: .5rem;
 }
 
+@media ( min-width: 660px ) {
+
+    .portfolio-list {
+        align-items: start;
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+
+}
+
+@media ( min-width: 1030px ) {
+
+    .portfolio-list {
+        grid-column-gap: 2rem;
+    }
+
+    .portfolio h2 {
+        font-size: 4.209rem;
+    }
+
+}
+
+/************
+Portfolio Card
+*************/
+
 .portfolio-card {
     background-color: white;
     border: 1px solid #f4f4f4;
@@ -642,30 +671,9 @@ Portfolio
 
 @media ( min-width: 660px ) {
 
-    .portfolio-list {
-        align-items: start;
-        display: grid;
-        grid-column-gap: 1rem;
-        grid-row-gap: 2rem;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-    }
-
     .portfolio-card {
         margin: 1rem 0 0;
     }
-}
-
-@media ( min-width: 1030px ) {
-
-    .portfolio-list {
-        grid-column-gap: 2rem;
-    }
-
-    .portfolio h2 {
-        font-size: 4.209rem;
-    }
-
 }
 
 /***********
@@ -683,7 +691,6 @@ Resume
 }
 
 .resume h2 {
-
     color: var(--color-light-grey); 
     font-size: 4.209rem;
     margin-bottom: 1rem;
@@ -804,7 +811,6 @@ Resume
 /***********
 Hero Component
 ************/
-
 
 .hero {
     background-attachment: scroll;
@@ -1062,7 +1068,7 @@ Portfolio Piece Styles
 }
 
 .convo-user p {
-    background-color: rgba(216, 77, 174, 0.1);
+    background-color: rgba(216, 77, 174, .1);
 }
 
 .convo-product p {
