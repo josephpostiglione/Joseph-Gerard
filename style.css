@@ -368,7 +368,7 @@ nav button:focus {
     border-radius: .2rem;
     height: 3px;
     margin: 6px 0;
-    transition: .4s;
+    transition: .5s;
     width: 34px;
 }
 
