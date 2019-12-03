@@ -12,8 +12,9 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="escape-hatch shadow-pop-tl">
+
+        <nav id="nav-links">
+            <a href="index.html" class="escape-hatch">
 
                 <svg viewBox="0 0 150 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -24,18 +25,20 @@
                 </svg>
             </a>
 
-            <div class="menu-icon" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="nav-links" >
+                <a href="portfolio.html">Portfolio</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
             </div>
 
-        </nav>
-
-        <nav class="nav-links" id="nav-links">
-            <a href="portfolio.html">Portfolio</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
+            <button>
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </button>
+            
         </nav>
 
     </header>
@@ -181,21 +184,19 @@
 
     <script>
 
-        function myFunction(x) {
-        
-            x.classList.toggle("change");
-    
-            var x = document.getElementById("nav-links");
-    
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } 
-    
-            else {
-                x.style.display = "block";
-            }
-        }
+        document.addEventListener("DOMContentLoaded", function(event) { //Initialized this script after the page is finished loading 
+
+        var element = document.getElementById('nav-links');// reference the main navigation by ID
+        var trigger = document.getElementById('menu-icon'); // reference the toggle button by ID
+
+        trigger.addEventListener('click', function(e) { // Listen for when the toggle is clicked
+            e.preventDefault(); // Prevent any default button action
+            element.classList.toggle('toggle-active'); // Toggle the class on or off, depending on if it is already there or not
+        });
+
+        });
     
     </script>
+
 </body>
 </html>
