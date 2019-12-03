@@ -29,7 +29,6 @@ html {
 	--size-three-up: calc( var(--size-two-up) * var(--size-ratio) );
 	--size-two-up: calc( var(--size-one-up) * var(--size-ratio) );
     --size-one-up: calc( 1rem * var(--size-ratio) );
-    --size-one-down: calc( .75rem * var(--size-ratio) );
 
     color: var(--color-dark-grey);
     font-family: 'Lato', arial, sans-serif;
@@ -76,6 +75,7 @@ p {
 
 a {
     color: var(--color-pink);
+    text-decoration: none;
 }
 
 a:visited {
@@ -171,6 +171,10 @@ main {
     padding-top: 8rem;
 }
 
+article {
+    text-align: center;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -183,7 +187,7 @@ Header
 header {
     left: 0;
     margin: 1rem;
-    opacity: .9;
+    opacity: .95;
     position: absolute;
     right: 0;
     z-index: 1;
@@ -246,7 +250,6 @@ nav a:hover {
     text-align: center;
 }
 
-
 @keyframes shadow-pop-tl {
 
     0% {
@@ -288,10 +291,10 @@ Menu Component
 .bar1, .bar2, .bar3 {
     background-color: var(--color-dark-grey);
     border-radius: .2rem;
-    height: 5px;
+    height: 3px;
     margin: 6px 0;
     transition: .4s;
-    width: 35px;
+    width: 34px;
 }
 
 .change .bar1 {
@@ -404,12 +407,12 @@ Footer
 ************/
 
 footer {
-    margin-top: 4rem;
+    margin-top: 1rem;
     padding: 1rem;
 }
 
 footer small {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 footer ul {
@@ -631,10 +634,6 @@ Portfolio
         grid-column-gap: 2rem;
     }
 
-    .portfolio h2 {
-        font-size: 4.209rem;
-    }
-
 }
 
 /************
@@ -681,7 +680,7 @@ Resume
 ************/
 
 .main-resume {
-    margin: 0 1rem;
+    margin: 0;
 }
 
 .resume {
@@ -691,8 +690,7 @@ Resume
 }
 
 .resume h2 {
-    color: var(--color-light-grey); 
-    font-size: 4.209rem;
+    color: var(--color-light-grey);
     margin-bottom: 1rem;
     margin-top: 0;
     padding: .5rem;
@@ -824,6 +822,28 @@ Hero Component
     padding: 2rem;
 }
 
+.main-portfolio-hero {
+    background-image: url(images/content-isometric.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+    opacity: .7;
+}
+
+.hero-311 {
+    background-image: url(images/austin-311/joseph_postiglione_311_interactive_map_home_comp.png);
+    background-position: top;
+}
+
+.hero-datatune {
+    background-image: url(images/datatune/datatune-hero-mobile.png);
+}
+
+.hero-ibm {
+    background-image: url(images/IBM\ Design\ Challenge\ -\ Joseph\ Postiglione\ \(7\).svg);
+}
+
 @media ( min-width: 1025px) {
 
     .hero {
@@ -831,13 +851,10 @@ Hero Component
     }
 }
 
+
 /*----------------------
 Portfolio Piece Styles
 ----------------------*/
-
-.main-portfolio-piece {
-    background-color: none;
-}
 
 .main-portfolio-piece article {
     align-items: center;
@@ -867,8 +884,7 @@ Portfolio Piece Styles
 }
 
 .main-portfolio-piece p {
-    color: #000;
-    font-size: var(--size-two-up);
+    font-size: var(--size-one-up);
     line-height: 1.4;
     max-width: 760px;
     padding: .5rem .5rem 1rem;
@@ -892,7 +908,7 @@ Portfolio Piece Styles
 }
 
 .main-portfolio-piece li {
-    color: #000;
+
     font-size: var(--size-one-up);
     padding: .5rem 0;
 }
@@ -900,15 +916,6 @@ Portfolio Piece Styles
 .main-portfolio-piece img {
     border-radius: .2rem;
     margin: .5rem auto 2rem;
-}
-
-.main-portfolio-hero {
-    background-image: url(images/content-isometric.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 60vh;
-    opacity: .7;
 }
 
 .user-feedback-2 {
@@ -935,77 +942,11 @@ Portfolio Piece Styles
 }
 
 .insight p {
-    color: #000;
     font-size: var(--size-one-up);
 }
 
 .usability-icon {
     background-color: var(--color-blue);
-}
-
-.hero-datatune {
-    background-image: url(images/datatune/datatune-hero-mobile.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 60vh;
-    opacity: .7;
-}
-
-.ibm-hero {
-    background-image: url(images/IBM\ Design\ Challenge\ -\ Joseph\ Postiglione\ \(7\).svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 60vh;
-    opacity: .7;
-}
-
-.ibm-main {
-    margin-top: 1rem;
-}
-
-.ibm-main article {
-    text-align: center;
-}
-
-.ibm-main h1 {
-    margin-top: 2rem;
-}
-
-.ibm-main h2 {
-    font-size: 3.157rem;
-    margin-bottom: 1rem;
-    padding: 0 1rem;
-}
-
-.ibm-main h4 {
-    margin: 1rem;
-}
-
-.ibm-main p {
-    max-width: 800px;
-    padding: 0 1rem 1rem;
-}
-
-.ibm-main a {
-    color: var(--color-pink);
-    text-decoration: none;
-    transition: color .2s ease-in-out;
-}
-
-.ibm-main a:visited {
-    color: var(--color-pink);
-}
-
-.ibm-main a:hover {
-    color: var(--color-purple);
-    transition: color .2s ease-in-out;
-}
-
-.ibm-main img {
-    border-radius: .2rem;
-    margin-bottom: 3rem;
 }
 
 .main-portfolio-piece a {
@@ -1029,15 +970,8 @@ Portfolio Piece Styles
     text-align: center;
 }
 
-.article-datatune h1 {
-    grid-column-end: 13;
-    grid-column-start: 1;
-    margin: 2rem 0 1rem;
-}
-
 .article-datatune h2 {
     color: var(--color-pink);
-    margin-top: 1rem;
 }
 
 .project-themes {
@@ -1136,21 +1070,12 @@ video {
     box-shadow: 0 0 2px var(--color-transparent-black), 0 15px 20px -10px var(--color-transparent-black);
 }
 
-.hero-311 {
-    background-image: url(images/austin-311/joseph_postiglione_311_interactive_map_home_comp.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 60vh;
-    opacity: .7;
-}
-
-.article-311 h2 {
-    color: #008B43;
-}
-
 .main-portfolio-piece .img-ideation {
     grid-column: span 6;
+}
+
+.article-311 h1 {
+    color: #008B43;
 }
 
 .article-311 video {
@@ -1163,6 +1088,13 @@ video {
     margin: 1rem auto;
 }   
 
+@media ( min-width: 556px ) {
+
+    .hero-datatune {
+        background-image: url(images/datatune/datatune-hero.png);
+    }
+}
+
 @media ( min-width: 568px ) {
 
     .main-portfolio-piece ul {
@@ -1170,18 +1102,7 @@ video {
     }
 }
 
-@media ( min-width: 700px ) {
-
-    .hero-datatune {
-        background-image: url(images/datatune/datatune-hero.png);
-    }
-}
-
 @media ( min-width: 760px ) {
-
-    .main-portfolio-piece h2 {
-        font-size: 3.157rem;
-    }
 
     .main-portfolio-piece ul {
         column-width: 220px;
@@ -1201,24 +1122,6 @@ video {
 }
 
 @media ( min-width: 800px ) {
-
-    .ibm-main {
-        margin: 1rem auto;
-    }
-
-    .ibm-main img {
-        margin: 1rem auto 3rem;
-        max-width: 1000px;
-    }
-
-    .ibm-main h2 {
-        font-size: var(--size-five-up);
-    }
-
-    .ibm-main p {
-        font-size: var(--size-one-up);
-        font-weight: 300;
-    }
 
     .user-feedback-2 {
         margin: 2rem auto 2rem;
@@ -1257,7 +1160,6 @@ video {
 
     .main-portfolio-piece p {
         align-self: center;
-        font-size: var(--size-one-up);
         grid-column-end: 13;
         grid-column-start: 1;
     }
@@ -1288,20 +1190,11 @@ video {
         grid-column-start: 3;
     }
 
-    .case-study-list ul {
-        font-size: var(--size-one-up);
-        text-align: center;
-    }
-
-    .case-study-list h3 {
-        margin-bottom: 0;
-    }
-
-    .main-portfolio-piece .important-paragraph-text {
+    .important-paragraph-text {
         grid-column-end: 11;
         grid-column-start: 3;
     }
-
+    
     .user-feedback-2 {
         grid-column: span 4;
     }
