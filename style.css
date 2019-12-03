@@ -231,7 +231,6 @@ nav a:hover {
 }
 
 .escape-hatch {
-    animation: shadow-pop-tl .4s cubic-bezier(.470, .0, .745, .715) both;
     background: var(--color-purple-green-gradient);
     border: none;
     border-radius: .2rem;
@@ -672,6 +671,7 @@ Portfolio Card
 
     .portfolio-card {
         margin: 1rem 0 0;
+        max-width: 100%;
     }
 }
 
