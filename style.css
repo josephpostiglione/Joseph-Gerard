@@ -985,9 +985,16 @@ Portfolio Piece Styles
     text-align: center;
 }
 
-.dd-info {
+.main-portfolio-piece .dd-info {
     background-color: var(--color-blue);
+    grid-column-end: 13;
+    grid-column-start: 6;
     margin: .5rem 0 2rem;
+}
+
+.main-portfolio-piece .case-study-list {
+    grid-column-end: 13;
+    grid-column-start: 1;
 }
 
 .main-portfolio-piece ul {
@@ -1167,6 +1174,11 @@ video {
 
 .main-portfolio-piece .img-ideation {
     grid-column: span 6;
+}
+
+.main-portfolio-piece section {
+    grid-column-end: 6;
+    grid-column-start: 1;
 }
 
 .article-311 h1 {
