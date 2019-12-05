@@ -87,7 +87,8 @@ a:hover {
 }
 
 a:focus {
-    outline-color: var(--color-green);
+    transform: translateX(4px) translateY(4px);
+    outline-color: var(--color-pink);
 }
 
 a:active {
@@ -1044,13 +1045,14 @@ Portfolio Piece Styles
 
 .main-portfolio-piece a {
     border-radius: .2rem;
-    grid-column-end: 11;
-    grid-column-start: 3;
+    grid-column-end: 12;
+    grid-column-start: 2;
     transition: all .3s ease-in-out;
 }
 
 .main-portfolio-piece a img {
-    margin: 0;
+    margin: 0 0 1rem;
+    transition: all .3s ease-in-out;
 }
 
 .main-portfolio-piece a img:hover {
@@ -1059,7 +1061,7 @@ Portfolio Piece Styles
 }
 
 .main-portfolio-piece h2, .main-portfolio-piece h3 {
-    margin: 1rem;
+    margin: 2rem 0 1rem;
     text-align: center;
 }
 
@@ -1155,7 +1157,7 @@ video {
     grid-column-end: 6;
     grid-column-start: 1;
     height: auto;
-    margin: auto;
+    margin: 1rem auto;
     width: 100%;
 }
 
@@ -1180,6 +1182,20 @@ video {
 .proto-gif {
     margin: 1rem auto;
 }   
+
+.datatune-screens {
+    background-color: black;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.main-portfolio-piece .image-data {
+    margin: 0;
+}
+
+.main-portfolio-piece a:focus {
+    transform: none;
+}
 
 @media ( min-width: 556px ) {
 
