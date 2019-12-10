@@ -362,15 +362,15 @@ nav button:focus {
 .menu-icon {
     display: inline-block;
     padding: .5rem;
-  }
+}
 
 .bar1, .bar2, .bar3 {
     background-color: var(--color-dark-grey);
     border-radius: .2rem;
-    height: 3px;
+    height: 2px;
     margin: 6px 0;
     transition: .5s;
-    width: 34px;
+    width: 22px;
 }
 
 .toggle-active .bar1 {
@@ -385,7 +385,7 @@ nav button:focus {
 
 .toggle-active .bar3 {
     -webkit-transform: rotate(90deg) translate(-16px, 0);
-    transform: rotate(90deg) translate(-16px, 0);
+    transform: rotate(90deg) translate(-12px, 0);
 }
 
 @media ( min-width: 1094px ) {
