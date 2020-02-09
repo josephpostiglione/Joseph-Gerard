@@ -493,14 +493,14 @@ Buttons & Forms
 }
 
 .main-contact form {
-    background: var(--color-dark-grey);
-    border: 2px solid var(--color-off-white);
+    /* background: var(--color-dark-grey); */
+    /* border: 2px solid var(--color-off-white); */
     /* border-radius: .2rem; */
-    box-shadow: 3px 3px 0 aquamarine;
+    /* box-shadow: 3px 3px 0 aquamarine; */
     display: flex;
     flex-direction: column;
     margin: auto;
-    max-width: 35rem;
+    max-width: 40rem;
     padding: 2rem;
 }
 
@@ -509,8 +509,8 @@ Buttons & Forms
 }
 
 input[type="text"], input[type="email"], textarea, button {
-    border: 2px solid var(--color-purple);
-    border-radius: .2rem;
+    border: 2px solid var(--color-dark-grey);
+    /* border-radius: .2rem; */
     color: var(--color-light-grey);
     font-size: 1rem;
     margin: .5rem 0 1rem;
@@ -548,7 +548,7 @@ button:hover {
 }
 
 label {
-    color: var(--color-off-white);
+    color: var(--color-dark-grey);
 }
 
 
@@ -901,10 +901,10 @@ Resume
 }
 
 .resume-info-block {
-    background-color: var(--color-dark-grey);
+    background-color: white;
     /* border-radius: .2rem .2rem 0 0; */
     box-sizing: border-box;
-    color: var(--color-off-white);
+    color: var(--color-dark-grey);
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -915,13 +915,13 @@ Resume
 }
 
 .resume-info-block a {
-    color: var(--color-off-white);
+    color: var(--color-dark-grey);
     padding: .25rem;
     text-decoration: none;
 }
 
 .resume-info-block h2, .skills-box h2 {
-    color: var(--color-off-white);
+    color: var(--color-dark-grey);
     font-size: var(--size-five-up);
     margin-bottom: 0;
     padding: 0;
@@ -930,7 +930,7 @@ Resume
 
 .resume-info-block h3 {
     margin-bottom: var(--size-four-up);
-    color: var(--color-off-white);
+    color: var(--color-dark-grey);
 }
 
 .resume p {
