@@ -313,6 +313,7 @@ nav .escape-hatch {
     position: absolute;
     left: 20%;
     right: 20%;
+    top: .5rem;
     width: 140px;
     text-decoration: none;
     transition: all .3s ease-in-out;
