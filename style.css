@@ -276,6 +276,7 @@ nav .escape-hatch {
     animation: nav-fade-in .4s ease-in-out;
     display: block;
     position: absolute;
+    z-index: -1;
 }
 
 .nav-links a {
