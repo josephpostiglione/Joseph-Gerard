@@ -315,7 +315,7 @@ nav .escape-hatch {
     right: 20%;
     width: 140px;
     text-decoration: none;
-    transition: all .6s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 @keyframes nav-fade-in {
