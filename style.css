@@ -665,6 +665,7 @@ Home
     flex-direction: column;
     padding: 2rem 3rem;
     text-align: center;
+    position: relative;
 }
 
 .text-container h1 {
@@ -982,7 +983,8 @@ Hero Component
     padding: 1rem;
     margin: 0;
     /* max-width: 300px; */
-    /* position: fixed; */
+    position: fixed;
+    z-index: -1;
 }
 
 .bg-1 {
