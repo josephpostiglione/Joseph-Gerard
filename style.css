@@ -416,7 +416,16 @@ nav button:focus {
     transition: all .3s ease-in-out;
 }
 
+.menu-icon:visited {
+    opacity: 1;
+}
+
 .menu-icon:hover {
+    opacity: .75;
+    transition: all .3s ease-in-out;
+}
+
+.menu-icon:focus {
     opacity: .75;
     transition: all .3s ease-in-out;
 }
