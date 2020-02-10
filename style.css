@@ -171,6 +171,7 @@ main {
     margin: 0;
     padding-top: 4.5rem;
     padding-bottom: 1rem;
+    animation: fadein 1.5s;
 }
 
 article {
@@ -182,7 +183,10 @@ img {
     max-width: 100%;
 }
 
-
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 /***********
 Header 
