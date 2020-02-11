@@ -811,10 +811,6 @@ Portfolio Card
     border: 1px solid black;
 }
 
-.portfolio-card img {
-    /* border-radius: .2rem .2rem 0 0; */
-}
-
 .portfolio-card h5 {
     margin: .5rem 1rem 0rem;
 }
@@ -1131,6 +1127,10 @@ Hero Component
 /*----------------------
 Portfolio Piece Styles
 ----------------------*/
+
+.main-portfolio-piece {
+    padding: 6.5rem 1rem 1rem;
+}
 
 .main-portfolio-piece article {
     align-items: center;
