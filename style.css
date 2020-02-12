@@ -1095,10 +1095,10 @@ Hero Component
 }
 .main-portfolio-hero {
     background-image: url(images/content-isometric.png);
-    background-position: center;
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 40vh;
+    min-height: 50vh;
     opacity: .7;
 }
 
@@ -1107,7 +1107,7 @@ Hero Component
     background-position: top;
 }
 
-.hero-datatune {
+.main-portfolio-piece .hero-datatune {
     background-image: url(images/datatune/datatune-hero-mobile.png);
 }
 
@@ -1132,39 +1132,61 @@ Portfolio Piece Styles
     padding: 6.5rem 1rem 1rem;
 }
 
-.main-portfolio-piece article {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+/* .main-portfolio-piece article {
     margin: 1rem 1rem;
-}
+} */
 
 .main-portfolio-piece h1 {
-    grid-column-end: 13;
+    grid-column-end: 6;
     grid-column-start: 1;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 1rem;
 }
 
 .main-portfolio-piece h2 {
-    margin-top: 2rem;
-    padding: 0 1rem;
+    font-size: var(--size-three-up);
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
 }
 
 .main-portfolio-piece h3 {
-    text-align: center;
+    text-align: left;
 }
 
 .main-portfolio-piece h4 {
     font-size: var(--size-three-up);
     margin: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
+.main-portfolio-piece .div-left {
+    grid-column-end: 7;
+    grid-column-start: 1;
+}
+
+.main-portfolio-piece .div-right {
+    grid-column-end: 13;
+    grid-column-start: 7;
+    text-align: left;
+}
+
+.main-portfolio-piece .div-center {
+    grid-column-end: 13;
+    grid-column-start: 1;
+}
+
+
+
+
+
 .main-portfolio-piece p {
-    font-size: var(--size-one-up);
+    /* font-size: var(--size-one-up); */
     line-height: 1.4;
     max-width: 760px;
     padding: .5rem .5rem 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 .main-portfolio-piece .dd-info {
@@ -1180,20 +1202,18 @@ Portfolio Piece Styles
 }
 
 .main-portfolio-piece ul {
-    column-width: 220px;
     grid-column-end: 13;
     grid-column-start: 1;
     list-style: none;
-    margin: 1rem 2rem;
+    /* margin: auto; */
     max-width: 760px;
-    padding: 1rem;
-    text-align: center;
+    /* padding: 1rem; */
+    text-align: left;
+    padding-left: 0;
 }
 
 .main-portfolio-piece li {
-
-    font-size: var(--size-one-up);
-    padding: .5rem 0;
+    font-size: 1rem;
 }
 
 .main-portfolio-piece img {
@@ -1249,13 +1269,13 @@ Portfolio Piece Styles
     transition: all .3s ease-in-out;
 }
 
-.main-portfolio-piece h2, .main-portfolio-piece h3 {
+/* .main-portfolio-piece h2, .main-portfolio-piece h3 {
     margin: 2rem 0 1rem;
-    text-align: center;
-}
+} */
 
 .article-datatune h2 {
     color: var(--color-pink);
+    margin-bottom: 2rem;
 }
 
 .project-themes {
@@ -1391,12 +1411,12 @@ video {
     transform: none;
 }
 
-@media ( min-width: 556px ) {
+/* @media ( min-width: 580px ) {
 
-    .hero-datatune {
+    .main-portfolio-piece .hero-datatune {
         background-image: url(images/datatune/datatune-hero.png);
     }
-}
+} */
 
 @media ( min-width: 568px ) {
 
@@ -1408,10 +1428,10 @@ video {
 @media ( min-width: 760px ) {
 
     .main-portfolio-piece ul {
-        column-width: 220px;
-        margin: auto;
+        /* column-width: 220px;
+        margin: auto; */
         max-width: 760px;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     .pull-quote {
@@ -1438,11 +1458,11 @@ video {
 @media ( min-width: 1020px ) {
 
     .main-portfolio-piece article {
+        align-items: top;
         display: grid;
-        grid-gap: 1rem;
+        grid-gap: 2rem;
         grid-template-columns: repeat(12,1fr);
-        justify-items: center;
-        margin: 0 6rem;
+        margin: 0;
     }
 
     .main-portfolio-piece h2 {
@@ -1512,9 +1532,17 @@ video {
         grid-column-end: 11;
         grid-column-start: 3;
     }
+    .project-themes h3 {
+        font-size: var(--size-three-up);
+    }
 
     .convo-user {
         margin-right: 20rem;
+    }
+
+    .main-portfolio-piece .hero-datatune {
+        grid-column-end: 7;
+        grid-column-start: 1;
     }
 }
 
@@ -1524,3 +1552,4 @@ video {
         padding: 3rem;
     }
 }
+
