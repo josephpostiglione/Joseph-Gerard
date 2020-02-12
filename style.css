@@ -1185,7 +1185,7 @@ Portfolio Piece Styles
 .main-portfolio-piece p {
     /* font-size: var(--size-one-up); */
     line-height: 1.4;
-    max-width: 760px;
+    max-width: 40rem;
     padding: .5rem .5rem 1rem;
     text-align: left;
 }
