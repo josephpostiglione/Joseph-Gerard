@@ -1153,6 +1153,7 @@ Portfolio Piece Styles
 
 .main-portfolio-piece h3 {
     text-align: left;
+
 }
 
 .main-portfolio-piece h4 {
@@ -1473,6 +1474,7 @@ video {
     .main-portfolio-piece h3 {
         grid-column-end: 13;
         grid-column-start: 1;
+        margin-bottom: 2rem;
     }
 
     .main-portfolio-piece h4 {
