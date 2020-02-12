@@ -524,13 +524,13 @@ input[type="text"], input[type="email"], textarea, button {
 }
 
 input:focus, textarea:focus, button:focus {
-    box-shadow: 3px 3px 0 aquamarine;
+    box-shadow: 3px 3px 0 var(--color-purple-dark);
     outline: none;
     transition: all .3s ease-in-out;
 }
 
 input:hover, textarea:hover {
-    box-shadow: 3px 3px 0 aquamarine;
+    box-shadow: 3px 3px 0 var(--color-purple);
     transition: all .3s ease-in-out;
 }
 
@@ -546,7 +546,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 3px 3px 0 aquamarine;
+    box-shadow: 3px 3px 0 var(--color-purple);
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
