@@ -1027,7 +1027,7 @@ Hero Component
 
 .hero {
     background-attachment: scroll;
-    background-position: center;
+    background-position: right bottom;
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--color-dark-grey);
