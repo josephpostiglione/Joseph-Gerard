@@ -908,7 +908,7 @@ Resume
     display: flex;
     flex-direction: column;
     margin: auto;
-    max-height: 40vh;
+    /* max-height: 40vh; */
     max-width: 100%;
     padding: 2rem;
     width: 1240px;
