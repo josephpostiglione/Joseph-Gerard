@@ -150,6 +150,7 @@ hr {
 
 main {
     margin: 2rem;
+    animation: fadein 1.5s;
 }
 
 .heading::before {
@@ -164,6 +165,16 @@ main {
 
 blockquote {
     max-width: 16rem;
+}
+
+@keyframes fadein {
+    from { 
+        opacity: 0; 
+    }
+
+    to { 
+        opacity: 1; 
+    }
 }
 
 @media ( min-width: 992px ) {
