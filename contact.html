@@ -8,67 +8,73 @@
     <title>Joseph Gerard Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/joey-logo.png">
+    <link rel="stylesheet" href="https://use.typekit.net/dfi1uqk.css">
     
 </head>
-
 <body>
-    <header>
+  <header>
+    <nav id="nav-links">
 
-        <nav id="nav-links">
-
-            <button>
-                <div class="menu-icon" id="menu-icon">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </button>
-
-
-            <a href="index.html" class="home-link">Joseph Gerard
-
-                <!-- <svg viewBox="0 0 150 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g class="site-logo" fill="#fafafa">
-                            <polygon id="Rectangle" points="89.8669662 0 150 0 150 178 60.0796731 130.030146 60.1330338 116 0 116 2.4459601e-14 130.058612 89.8669662 178"></polygon>
-                        </g>
-                    </g>
-                </svg>
-                 -->
-            </a>
-
-                        
-            <div class="nav-links">
-                <a href="portfolio.html">Work.</a>
-                <a href="resume.html">Resume.</a>
-                <a href="contact.html" class="current-page">Contact.</a>
+        <div class="menu-overlay toggle-active">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#resume">Resume</a></li>
+              <!-- <li><a href="about.html">About</a></li> -->
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>  
+  
+        <div class="mobile-nav">
+          <button>
+            <div class="menu-icon" id="menu-icon">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <!-- <div class="bar3"></div> -->
             </div>
-        </nav>
-
-    </header>
+          </button>
+          <a href="index.html" class="escape-hatch">Joseph Gerard Design</a>
+  
+        </div>
+      
+        <div class="desktop-nav">
+          <a href="index.html" class="escape-hatch">Joseph Gerard Design</a>
+          <ul class="nav-links">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#resume">Resume</a></li>
+            <!-- <li><a href="about.html">About</a></li> -->
+            <li><a href="contact.html" class="link-button">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
 
     <main class="main-contact">
+        <section class="hero-text">
+            <h1>Contact</h1>
 
-        <h1>Contact.</h1>
+            <form action="https://formspree.io/xgeedgje" method="POST">
 
-        <form action="https://formspree.io/xgeedgje" method="POST">
+                    <label for="name">Name</label>
+                    
+                    <input type="text" id="name" name="name" placeholder="Jane Appleseed">
 
-                <label for="name">Name</label>
+                    <label for="email">Email</label>
                 
-                <input type="text" id="name" name="name" placeholder="Jane Appleseed">
+                    <input type="email" id="email" name="_replyto" placeholder="Jane@Appleseed.com">
 
-                <label for="email">Email</label>
-            
-                <input type="email" id="email" name="_replyto" placeholder="Jane@Appleseed.com">
+                    <label for="message">Message</label>
 
-                <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Yadda Yadda Yadda..."></textarea>
 
-                <textarea id="message" name="message" placeholder="Design me an app that lets me pet all the dogs..."></textarea>
-
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-        </form>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+            </form>
+        </section>
     </main>
     <footer>
 
@@ -77,9 +83,9 @@
                 <small>Site Design by Joseph Postiglione</small>
         
                 <ul>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="https://www.linkedin.com/in/joseph-postiglione/" target="_blank">Linkedin</a></li>
-                    <li><a href="https://liftedtraces.bandcamp.com/" target="_blank">Music</a></li>
+                  <li><a href="index.html#work">Case Studies</a></li>
+                  <li><a href="https://www.linkedin.com/in/joseph-postiglione/" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://liftedtraces.bandcamp.com/" target="_blank">Music</a></li>
                 </ul>
         
             </div>

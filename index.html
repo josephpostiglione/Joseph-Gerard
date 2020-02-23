@@ -8,114 +8,296 @@
     <title>Joseph Gerard Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/joey-logo.png">
+    <link rel="stylesheet" href="https://use.typekit.net/dfi1uqk.css">
     
 </head>
-
 <body>
-    <header>
+  <header>
+    <nav id="nav-links">
 
-        <nav id="nav-links">
-
-            <button>
-                <div class="menu-icon" id="menu-icon">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </button>
-
-
-            <a href="index.html" class="home-link">Joseph Gerard
-
-                <!-- <svg viewBox="0 0 150 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g class="site-logo" fill="#fafafa">
-                            <polygon id="Rectangle" points="89.8669662 0 150 0 150 178 60.0796731 130.030146 60.1330338 116 0 116 2.4459601e-14 130.058612 89.8669662 178"></polygon>
-                        </g>
-                    </g>
-                </svg>
-                 -->
-            </a>
-
-                        
-            <div class="nav-links">
-                <a href="portfolio.html">Work.</a>
-                <a href="resume.html">Resume.</a>
-                <a href="contact.html">Contact.</a>
-            </div>
+      <div class="menu-overlay toggle-active">
+        <nav class="overlay-menu">
+          <ul>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#resume">Resume</a></li>
+            <!-- <li><a href="about.html">About</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
+      </div>  
 
-    </header>
+      <div class="mobile-nav">
+        <button>
+          <div class="menu-icon" id="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <!-- <div class="bar3"></div> -->
+          </div>
+        </button>
+        <a href="index.html" class="escape-hatch">Joseph Gerard Design</a>
 
-    <main class="main-index">
-        
-        <div class="hero bg-1">
-            <p class="hero-text"><span class="hover-color">I</span> <span class="hover-color">am</span> <span class="hover-color">a</span> <span class="hover-color">User</span> <span class="hover-color">Experience</span> <span class="hover-color">Designer</span></p>
-            <!-- <a href="#contact"><img src="images/arrow-down-white.svg" class="icon-down-arrow" alt=""></a> -->
+      </div>
+    
+      <div class="desktop-nav">
+        <a href="index.html" class="escape-hatch">Joseph Gerard Design</a>
+        <ul class="nav-links">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#resume">Resume</a></li>
+          <!-- <li><a href="about.html">About</a></li> -->
+          <li><a href="contact.html" class="link-button">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-text">
+	  <h1 class="hero-h1">I am a User Experience Designer<span>|</span></h1>
+      <a href="contact.html" class="link-button">Contact Me &#187;</a>
+    </section>
+    <section class="work-list" id="work">
+      <h2 class="heading">Case Studies</h2>
+
+      <div class="work-card">
+        <div>
+          <a href="contentapp.html"><img src="images/content-isometric.png" alt="content app home"></a>
         </div>
+        <div class="card-text">
+          <a href="contentapp.html"><h3>Content App</h3></a>
+		  <p>Why is learning about user experience so...difficult?</p>
+		  <a href="contentapp.html" class="link-button">View Case Study</a>
+		  <div class="tags-container">
+		  	<small class="work-tag">User Research</small>
+			  <small class="work-tag">Usability Testing</small>
+			  <small class="work-tag">Prototyping</small>
+		  </div>
+        </div>
+        <hr>
+      </div>
+
+      <div class="work-card">
+        <div>
+          <a href="datatuneapp.html"><img src="images/datatune/datatune-hero.png" alt="datatune app home"></a>
+        </div>
+        <div class="card-text">
+          <a href="datatuneapp.html"><h3>Datatune App</h3></a>
+          <p>Giving musicians control over their streaming revenue.</p>
+		  <a href="datatuneapp.html" class="link-button">View Case Study</a>
+		  <div class="tags-container">
+			<small class="work-tag">Interaction Design</small>
+			<small class="work-tag">Visual Design</small>
+		</div>
+        </div>
+        <hr>
+      </div>
+
+      <div class="work-card">
+        <div>
+          <a href="austin311.html"><img src="images//austin-311/311-redesign.png" alt="311 redesign home"></a>
+        </div>
+        <div class="card-text">
+          <a href="austin311.html"><h3>Austin 311: Interactive Map</h3></a>
+          <p>How can we make it easier for users to find results that are relevent to their neighborhood.</p>
+		  <a href="austin311.html" class="link-button">View Case Study</a>
+		  <div class="tags-container">
+			<small class="work-tag">Interaction Design</small>
+			<small class="work-tag">Prototyping</small>
+		</div>
+        </div>
+        <hr>
+      </div>
+
+      <div class="work-card">
+        <div>
+          <a href="ibmchallenge.html"><img src="images/ibmlogo.svg" alt="ibm challenge case study"></a>
+        </div>
+        <div class="card-text">
+          <a href="ibmchallenge.html"><h3>IBM Design Challenge</h3></a>
+          <p>A quick redesign of the Louvre's search function.</p>
+		  <a href="ibmchallenge.html" class="link-button">View Case Study</a>
+		  <div class="tags-container">
+			<small class="work-tag">Interaction Design</small>
+			<small class="work-tag">UI Design</small>
+		</div>
+        </div>
+        <hr>
+      </div>
+
+
+    </section>
+    <section class="about">
+		<h2 class="heading" id="about">About Me</h2>
+		
+	
+		<p class="featured-paragraph">Hiya, I'm Joseph, A UX designer and researcher currently seeking new opportunities in Austin, Texas. I am passionate about researching, testing, and building beautiful and accessible products, systems, and services.</p>
+		<p class="featured-paragraph">With a background in music performance and production, I was already familiar with the process of storytelling, but it was through my study of User Experience Design that I fell in love with discovering the stories of others. I became fascinated with the way people interact with their surroundings and the emotional journey they have while doing so.</p>
+		<p class="featured-paragraph">I am comfortable in all phases of the design process, from conducting exploratory research and heuristic analysis to building prototypes and delivering production-ready assets.</p>
+		<a href="contact.html" class="link-button">Contact Me &#187;</a>
+    </section>
+    <section class="resume" id="resume">
+      <h2 class="heading">Resume</h2>
+
+      <div class="resume-info-block">
+
+          <h3>Joseph Postiglione</h3>
+          <h4>User Experience Designer</h4>
+
+          
+          <a href="mailto:josephgpostiglione@gmail.com" target="_blank">JosephGpostiglione@gmail.com</a>
+          <a href="tel:1-631-790-6123">(631) 790-6123</a>
+          <a href="https://joseph-gerard.com">Joseph-Gerard.com</a>
+      
+      </div>
+      <hr>
+      <div class="skills-box">
+
+          <div>
+
+              <h3>Skills</h3>
+
+              <ul>
+				<li>User Centered Design</li>
+                  <li>Creative Problem Solving</li>
+                  <li>User Research</li>
+                  <li>Usability Testing</li>
+                  <li>Interaction Design</li>
+                  <li>Visual Design</li>
+                  <li>Information Architecture</li>
+              </ul>
+
+              <h3>Expertise</h3>
+
+              <ul>
+                  <li>Figma</li>
+                  <li>HTML/CSS</li>
+                  <li>Sketch</li>
+				  <li>Adobe Creative Cloud</li>
+				  <li>Davinci Resolve</li>
+                  <li>Logic Pro X</li>
+              </ul>
+              
+          </div>
+
+          <div>
+              
+              <h3>Education</h3>
+
+              <p>
+                  <strong>A.A.S.</strong> 
+                  <br>Visual Communication - User Experience Design
+                  <br>Austin Community College
+                  <br>GPA: 4.0
+              </p>
+
+              <h3>Awards</h3>
+              <p>Visual Communication Endowed Scholarship Award</p>
+              <p>Honors Program</p>
+
+              <h3>Interests</h3>
+              <ul>
+                  <li>Writing and Recording Music</li>
+                  <li>Playing with My Dogs</li>
+                  <li>Movies</li>
+                  <li>Photography & Videography</li>
+                  <li>Board Games</li>
+                  <li>Cooking</li>
+                  <li>Designing Circuits</li>
+              </ul>
+              
+          </div>
+      </div>
+      <hr>
+      <h2>Experience</h2>
+      <div class="experience-box">
         
-        <section class="text-container">
-            <h1>I'm Joseph</h1>
-            <p class="paragraph-featured">A User Experience Designer living in Austin, Texas. I am passionate about researching, testing, and designing beautifully accessible products.</p>
-        </section>
+          <div>
 
-        <div class="hero bg-2"></div>
+              <h3>Dress for Success <small>- 2020</small></h3>
+              
+              <h4>User Experience Designer</h4>
+              <ul>
+                  <li>Identified the Minimum Viable Product and championed research to stakeholders.</li>
+                  <li>Conducted generative research and built personas to better understand the target users.</li>
+                  <li>Synthesized research, created wireframes, and tested prototypes.</li>
+              </ul>
+          </div>
+          
+          <div>
 
-        <section class="text-container">
-            <h1>How I Got Here</h1>
-            <p class="paragraph-featured">After working in the music industry for over ten years I decided it was time for a change. I moved to Austin from NYC and spent a few years working as an electrical technician while trying to find a career that really excited me. Eventually I found the UXUI program at Austin Community College and immediately fell in love with UX design.</p>
-        </section>
+              <h3>Advanced Scanners <small>- 2019</small></h3>
+              
+              <h4>UI Designer</h4>
+              <ul>
+                  <li>Conducted research with marketing team and developed a comprehensive strategy for rebranding the company.</li>
+                  <li>Ideated, designed, and revised the graphical user interface for a 3d optical brain scanner.</li>
+                  <li>Produced 25 potential logo designs.</li>
+              </ul>
+          </div>
 
-        <div class="hero bg-3"></div>
+          <div>
+              <h3>Switched On Austin <small>- 2015 - 2018</small></h3> 
+              <h4>Electrical Technician / Community Outreach Coordinator</h4>
+              <ul>
+                  <li>Designed, repaired, and restored electronic circuits for vintage audio equipment.</li>
+                  <li>Coordinated with local artists and businesses for monthly meetups, classes, and performances.</li>
+                  <li>Managed and produced countless social media campaigns that helped build a massive online following in a niche market.</li>
+              </ul>
+          </div>
+          <div>
+              <h3>Stranger Things: Season 2 <small>- 2017</small></h3> 
+              <h4>Score Mixer</h4>
+              <ul>
+                  <li>Mixed score and musical cues for Season Two of the Netflix series Stranger Things.</li>
+                  <li>Developed system to catalogue recordings.</li>
+                  <li>Managed deliverables to Netflix.</li>
+                  <li>Remixed score for vinyl release.</li>
+              </ul>
+          </div>
+          <div>
+              <h3>Un.Box Studio <small>- 2018</small></h3> 
+              <h4>Building Design Intern</h4>
+              <ul>
+                  <li>Illustrated building plan sets.</li>
+                  <li>Wrote successful application for Austin Design Week event that brought. in hundreds of attendees.</li>
+              </ul>
+          </div>
 
-        <section class="text-container">
-            <h1 id="contact">Why</h1>
-            <p class="paragraph-featured">My non-traditional work history has given me a diverse and marketable set of skills perfect for the UXUI industry. Working closely with other musicians over the years has tought me empathy and persuasiveness, while my schooling has emphasized the user centered design process and pixel perfect designs. As a lifelong learner with a penchant for problem solving, I am perfectly suited for this ever-evolving field.</p>
+           
+      </div>
+      <hr>
+  </section>
 
-            <a href="contact.html" class="link-contact">Contact</a>
-        </section>
 
-        <div class="hero bg-4"></div>
+  </main>
 
-        <section class="text-container">
-            <h1>Also My Dogs</h1>
-            <p class="paragraph-featured">Devout followers of the lord of the boop. They spend their free time monching chimpkin and watching sci-fi movies.</p>
-            <a href="https://www.instagram.com/willie_and_littlefoot/?hl=en"  class="link-instagram" target="_blank">
-                <img src="images/instagram-icon.png" class="icon-instagram" alt="">
-                <p>@willie_and_littlefoot</p>
-            </a>
-        </section>
+  <footer>
 
-        <div class="hero bg-5"></div>
-     
-    </main>
-    
-    <footer>
+    <div>
 
-            <div>
+        <small>Site Design by Joseph Postiglione</small>
 
-                <small>Site Design by Joseph Postiglione</small>
-        
-                <ul>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="https://www.linkedin.com/in/joseph-postiglione/" target="_blank">Linkedin</a></li>
-                    <li><a href="https://liftedtraces.bandcamp.com/" target="_blank">Music</a></li>
-                </ul>
-        
-            </div>
-    
-            <small>&copy; Joseph Postiglione 2019</small>
+        <ul>
+            <li><a href="index.html#work">Case Studies</a></li>
+            <li><a href="https://www.linkedin.com/in/joseph-postiglione/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://liftedtraces.bandcamp.com/" target="_blank">Music</a></li>
+        </ul>
 
-    </footer>
+    </div>
+
+    <small>&copy; Joseph Postiglione 2020</small>
+
+</footer>
 
     <script>
 
-        document.addEventListener("DOMContentLoaded", function(event) { //Initialized this script after the page is finished loading 
+      document.addEventListener("DOMContentLoaded", function(event) { //Initialized this script after the page is finished loading 
 
-        var element = document.getElementById('nav-links');// reference the main navigation by ID
-        var trigger = document.getElementById('menu-icon'); // reference the toggle button by ID
+      var element = document.getElementById('nav-links');// reference the main navigation by ID
+       
+      var trigger = document.getElementById('menu-icon'); // reference the toggle button by ID
 
-        trigger.addEventListener('click', function(e) { // Listen for when the toggle is clicked
+      trigger.addEventListener('click', function(e) { // Listen for when the toggle is clicked
             e.preventDefault(); // Prevent any default button action
             element.classList.toggle('toggle-active'); // Toggle the class on or off, depending on if it is already there or not
         });
