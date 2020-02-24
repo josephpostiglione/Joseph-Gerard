@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--size-three-up);
+    font-size: var(--size-two-up);
     margin: 3rem 0 4rem;
 }
 
@@ -741,6 +741,7 @@ link-button
 
 .link-button {
     background-color: var(--color-blue);
+    box-shadow: 3px 3px 0 var(--color-salmon);
     color: white;
     display: inline-block;
     font-size: 1rem;
@@ -765,7 +766,11 @@ link-button
     transition: all .3s ease-in-out;
 }
 
-
+@media ( min-width: 600px ) {
+    .link-button{
+        box-shadow: none;
+    }  
+}
 
 @media ( min-width: 760px ) {
     .hero-text .link-button {
@@ -816,10 +821,10 @@ Work Section
 }
 
 .work-tag {
-    background-color: var(--color-salmon);
-    border-radius: 2rem;
+/* 
+    border: 1px solid var(--color-salmon); */
     display: inline-block;
-    color: white;
+    color: var(--color-salmon);
     margin: .5rem .25rem;
     padding: .5rem 1rem;
 }
@@ -912,6 +917,20 @@ Casestudy Sub Nav
     display: inline-block;
     margin: 0;
     padding: 0;
+}
+
+.casestudy-subnav li {
+    display: inline-block;
+}
+
+.casestudy-subnav a {
+    /* background-color: var(--color-salmon);
+    color: white; */
+    margin: .5rem 0;
+}
+
+.casestudy-subnav a:visited {
+    /* color: white; */
 }
 /***
 extras
