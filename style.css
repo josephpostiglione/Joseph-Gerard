@@ -187,12 +187,6 @@ blockquote {
 Nav
 */
 
-/* nav {
-    /* align-items: center; */
-    /* display: flex; */
-    /* padding: 1.5rem; */
-    /* position: absolute; 
-} */
 
 nav ul {
     padding-left: 0;
@@ -218,7 +212,6 @@ nav a:visited  {
 }
 
 nav a:hover {
-    /* background-color: transparent; */
     color: white;
     outline: none;
     transition: all .2s ease-in-out;
@@ -236,16 +229,10 @@ nav a:active {
     font-size: 1rem;
     font-weight: 700;
     padding: 0;
-    /* position: absolute;
-
-    right: 20%;
-    text-align: center; */
     margin-left: auto;
 }
 
-/* .escape-hatch:visited {
 
-} */
 
 .escape-hatch:hover {
     background-color: transparent;
@@ -257,9 +244,6 @@ nav a:active {
     color: var(--color-salmon);
 
 }
-/* .escape-hatch:active {
-
-} */
 
 .nav-links {
     display: none;
@@ -309,8 +293,6 @@ nav a:active {
     }
     
     nav {
-        /* border-bottom: 2px solid var(--color-blue-extra-dark); */
-        /* display: flex; */
         margin: 0 1rem;
         padding: 2rem 0;
     }
@@ -331,8 +313,6 @@ nav a:active {
     .nav-links, .toggle-active .nav-links {
         animation: none;
         display: block;
-        /* margin-right: auto; */
-        /* position: initial; */
         top: 4rem;
     }
 
@@ -398,7 +378,6 @@ footer a:hover {
         justify-content: center;
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
     }
 
     footer ul {
@@ -442,7 +421,6 @@ form {
 form input[type="text"], form input[type="email"], form textarea, form button {
     border: 1px solid var(--color-blue);
     box-shadow: 3px 3px 0 -2px var(--color-blue);
-    /* border-radius: .2rem; */
     color: var(--color-light-grey);
     font-size: var(--size-one-up);
     margin: .5rem 0 1rem;
@@ -498,29 +476,12 @@ Resume
     padding-bottom: 1rem;
 }
 
-
-/* .resume h1 {
-    background-image: url(images/lake.jpg);
-    background-size: cover;
-    background-position: center;
-    color: var(--color-off-white);
-    padding: 1rem;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-
 .resume-info-block {
-    /* background-color: white; */
-    /* border-radius: .2rem .2rem 0 0; */
     box-sizing: border-box;
     color: var(--color-blue-extra-dark);
     display: flex;
     flex-direction: column;
     margin: auto;
-    /* max-height: 40vh; */
     max-width: 100%;
     padding: 2rem 0;
     width: 1240px;
@@ -556,7 +517,6 @@ Resume
 }
 
 .resume-info-block h3 {
-    /* margin-bottom: var(--size-two-up); */
     color: var(--color-blue-extra-dark);
 }
 
@@ -575,31 +535,17 @@ Resume
 }
 
 .resume h3 {
-    /* font-size: var(--size-two-up); */
+
     margin: 2rem 0 0 0 ;
 }
 
 .resume h4 {
     color: var(--color-blue);
-    /* font-size: var(--size-one-up); */
     margin: .5rem 0;
     max-width: 30rem;
 }
 
-/* .graphic-box {
-    background-image: url(images/treeandmoon.JPG);
-    background-position: center;
-    background-size: cover;
-    height: 1462px;
-    margin: auto;
-    max-height: 30vh;
-    max-width: 100%;
-    opacity: .6;
-    width: 1240px;
-} */
-
 .skills-box {
-    /* background-color: white; */
     box-sizing: border-box;
     color: var(--color-blue-extra-dark);
     margin: auto;
@@ -614,7 +560,6 @@ Resume
 }
 
 .experience-box {
-    /* background-color: white; */
     box-sizing: border-box;
     color: var(--color-blue-extra-dark);
     margin: auto;
@@ -715,11 +660,6 @@ nav button:focus {
     transform: rotate(-45deg);
 }
 
-/* .toggle-active .bar3 {
-    -webkit-transform: rotate(90deg) translate(-12px, 0);
-    transform: rotate(90deg) translate(-12px, 0);
-} */
-
 @media ( min-width: 992px ) {
 
     .menu-icon {
@@ -732,13 +672,10 @@ Overlay
 */
 
 .menu-overlay {
-    /* background: linear-gradient(180deg, rgba(0,0,0,0) , var(--color-pink)10%); */
     background-color: var(--color-pink);
     height: 100%;
     width: 100%;
     position: fixed;
-    /* left: 50%;
-    right: 50%; */
     text-align: center;
     top: 4.5rem;
     transition: opacity 0.2s ease-in-out;
@@ -789,7 +726,6 @@ link-button
 
 .link-button {
     background-color: var(--color-blue);
-    /* border-radius: 20rem; */
     color: white;
     display: inline-block;
     font-size: 1rem;
@@ -849,7 +785,6 @@ Work Section
 
 .work-card img {
     background-color: white;
-    /* height: 30vh; */
     max-width: 100%;
     margin: 0 0 2rem;
     transition: all .3s ease-in-out;
@@ -940,7 +875,6 @@ footer .line-break::after {
 
 video {
     height: auto;
-    /* margin: 1rem auto; */
     width: 100%;
 }
 
