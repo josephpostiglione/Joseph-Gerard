@@ -448,6 +448,9 @@ input {
 textarea {
     max-width: 100%;
     min-height: 4rem;
+
+    -webkit-border-radius:0; 
+    border-radius:0;
 } 
 
 button {
