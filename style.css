@@ -687,7 +687,7 @@ Overlay
 */
 
 .menu-overlay {
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
     height: 100%;
     width: 100%;
     position: fixed;
